@@ -29,6 +29,9 @@ class Car extends React.Component {
    neworderscar = (props) => {
         this.props.history.push('/Newordersc/car')
    }
+   rentcar = (props) => {
+        this.props.history.push('/New/rentcar/car')
+   }
 
 
     render () {
@@ -44,6 +47,7 @@ class Car extends React.Component {
                     <IconButton onClick={this.transactionscar} style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/car/tarakoneshc.png"}/></IconButton>
                         <IconButton style={{position:"absolute", marginRight:"82%",marginTop:"-5%"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/car/tarakoneshcrooz.png"}/></IconButton>
                     <IconButton onClick={this.brandscar} style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/car/brandcar.png"}/></IconButton>
+                        <IconButton onClick={this.rentcar} style={{position:"absolute", marginRight:"82%",marginTop:"-5%"}} >درخواست های اجاره گیرندگان خودرو</IconButton>
                     <IconButton onClick={this.modelscar} style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/car/modelcar.png"}/></IconButton>
                     <IconButton style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/car/karbaranc.png"}/></IconButton>
                     <IconButton style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/car/manateghc.png"}/></IconButton>

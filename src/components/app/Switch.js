@@ -96,8 +96,8 @@ class Switchh extends Component {
 
     render() {
         return (
-            <label>
-                <Switch onChange={this.handleChange} checked={this.state.checked} />
+            <label style={{marginRight:"50%"}}>
+                <Switch  onChange={this.handleChange} checked={this.state.checked} />
             </label>
         );
     }

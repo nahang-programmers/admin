@@ -32,7 +32,7 @@ componentDidMount() {
     const api = "http://192.168.1.3:4300/V1.0.0";
     axios({
         method: 'get',
-        url: api + "/parking/getall",
+        url: api + "/Parking/getall",
         headers: {'Authorization': `Bearer ${token}`}
     }).then(response => {
         return response;

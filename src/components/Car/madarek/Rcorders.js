@@ -15,10 +15,10 @@ class Rcorders extends React.Component {
 
     handleChange() {
         const token = localStorage.getItem('nahang_token');
-        const url = "http://192.168.1.3:4300/V1.0.0";
+        const url = "http://79.175.171.198:9993/V1.0.0";
         axios ({
             method:"PUT",
-            url : url + '/Car/' + "5d658ab28169771db85c4def",
+            url : url + '/ccar/update' + "_id",
             headers: {'Authorization': `Bearer ${token}`},
             body: {
                 accepted: true,
@@ -67,8 +67,7 @@ class Rcorders extends React.Component {
                     <th  className='grid-item1'>مدل</th>
                     <th  className='grid-item1'>رنگ</th>
                     <th  className='grid-item1'>ظرفیت</th>
-                    <th  className='grid-item1'>تعداد سیلندر</th>
-                    <th  className='grid-item1'>نوع سوخت </th>
+
 
 
 
@@ -80,31 +79,40 @@ class Rcorders extends React.Component {
                         <td className='grid-item2'>{this.props.data['model']}</td>
                         <td className='grid-item2'>{this.props.data['color']}</td>
                         <td className='grid-item2'>{this.props.data['zarfiat']}</td>
-                        <td className='grid-item2'>{this.props.data['silandr']}</td>
-                        <td className='grid-item2'>{this.props.data['noesokht']}</td>
+
 
                     </tr>
 
                     <thead>
-
+                    <th  className='grid-item1'>تعداد سیلندر</th>
+                    <th  className='grid-item1'>نوع سوخت </th>
                     <th  className='grid-item1'>تعداد محور </th>
                     <th  className='grid-item1'>تعداد چرخ </th>
                     <th  className='grid-item1'>شماره موتور</th>
                     <th  className='grid-item1'>شماره شاسی</th>
+
+
+                    </thead>
+
+                    <tr>
+                        <td className='grid-item2'>{this.props.data['silandr']}</td>
+                        <td className='grid-item2'>{this.props.data['noesokht']}</td>
+                        <td className='grid-item2'>{this.props.data['mehvarNum']}</td>
+                        <td className='grid-item2'>{this.props.data['charkhNum']}</td>
+                        <td  style={{marginRight:"10%"}}>{this.props.data['motorNumber']}</td>
+                        <td className='grid-item2'>{this.props.data['shasiNumber']}</td>
+
+                    </tr>
+
+                    <thead>
                     <th  className='grid-item1'>وضعیت</th>
                     <th  className='grid-item1'>بیمه شخص ثالث</th>
                     <th  className='grid-item1'>بیمه بدنه</th>
                     <th  className='grid-item1'>وضعیت فنی</th>
                     <th  className='grid-item1'>آپشن</th>
-
                     </thead>
 
                     <tr>
-
-                        <td className='grid-item2'>{this.props.data['mehvarNum']}</td>
-                        <td className='grid-item2'>{this.props.data['charkhNum']}</td>
-                        <td className='grid-item2'>{this.props.data['motorNumber']}</td>
-                        <td className='grid-item2'>{this.props.data['shasiNumber']}</td>
                         <td className='grid-item2'>{this.props.data['vaziat']}</td>
                         <td className='grid-item2'>{this.props.data['bimesales']}</td>
                         <td className='grid-item2'>{this.props.data['bimebadane']}</td>
@@ -113,7 +121,7 @@ class Rcorders extends React.Component {
                     </tr>
                 </Table>
 
-                <div style={{backgroundColor:"red", width:"60%", margin:"auto", marginTop:"5%", borderRadius:"2%"}}>
+                <div style={{backgroundColor:"#0693e3", width:"60%", margin:"auto", marginTop:"5%", borderRadius:"2%"}}>
                     <a href="http://localhost:3005/assets/img/parking.png" target="_blank" style={{marginRight:"5%"}}><img src={"./../assets/img/parking.png"} style={{height:"200px", width:"130px"}}/></a>
                     <a href="http://localhost:3005/assets/img/parking.png" target="_blank" style={{marginRight:"5%"}}><img src={"./../assets/img/parking.png"} style={{height:"200px", width:"130px"}}/></a>
                     <a href="http://localhost:3005/assets/img/parking.png" target="_blank" style={{marginRight:"5%"}}><img src={"./../assets/img/parking.png"} style={{height:"200px", width:"130px"}}/></a>

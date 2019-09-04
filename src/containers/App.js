@@ -54,6 +54,11 @@ import Componentt from "../components/app/Component.js";
 import Rorders from "../components/Home/madarek/Rorders";
 import Newordersc from "../components/Car/Newordersc";
 import Newordersp from "../components/Parking/Newordersp";
+import Newrentcar from "../components/Car/Newrentcar";
+import Newrentparking from "../components/Parking/Newrentparking";
+import Newrenthome from "../components/Home/Newrenthome";
+import Presale from "../components/Amlak/Presale";
+
 
 
 
@@ -128,6 +133,11 @@ class App extends Component {
 							<Route path='/Rorders' component={Rorders}/>
 							<Route path='/Newordersc/car' component={Newordersc}/>
 							<Route path='/Newordersp/parking' component={Newordersp}/>
+							<Route path='/New/rentcar/car' component={Newrentcar}/>
+							<Route path='/New/rentparking/parking' component={Newrentparking}/>
+							<Route path='/New/renthome/home' component={Newrenthome}/>
+							<Route path='/presale' component={Presale}/>
+							<Route path='/amlak/home' component={Amlak}/>
 
 
 							<Redirect to="/error" />

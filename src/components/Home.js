@@ -20,7 +20,17 @@ class Home extends React.Component {
     newordersh = (props) => {
         this.props.history.push('/Newordersh/home')
     }
+   newrenthome = (props) => {
+        this.props.history.push('/New/renthome/home')
+   }
 
+   salehome = (props) => {
+        this.props.history.push('/salehome/home')
+   }
+
+   buyhome = (props) => {
+        this.props.history.push()
+   }
 
 
   render() {
@@ -28,7 +38,7 @@ class Home extends React.Component {
           <React.Fragment>
               <TopNav/>
               <div style={{paddingTop:"5%",marginRight:"2%"}}>
-
+                     <IconButton  onClick={this.buyhome}  style={{position:"absolute", marginRight:"82%",marginTop:"1%"}}>خرید خانه</IconButton>
                   <IconButton onClick={this.ordershome} style={{ marginTop:"5%"}}><img  style={{width:"200px"}} src={"./../assets/img/img-pages/home/darkhasth.png"}/></IconButton>
                      <IconButton onClick={this.newordersh} style={{position:"absolute", marginRight:"68%", marginTop:"5%"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/home/darkhasthrooz.png"}/></IconButton>
                   <IconButton onClick={this.businesseshome} style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/home/kasbokarh.png"}/></IconButton>
@@ -36,8 +46,9 @@ class Home extends React.Component {
                   <IconButton onClick={this.transactionshome} style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/home/tarakoneshh.png"}/></IconButton>
                   <IconButton  style={{position:"absolute", marginRight:"82%",marginTop:"-4%"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/home/tarakoneshhrooz.png"}/></IconButton>
                   <IconButton style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/home/karbaranh.png"}/></IconButton>
+                         <IconButton  onClick={this.newrenthome}  style={{position:"absolute", marginRight:"82%",marginTop:"-2%"}}> اجاره گیرندگان خانه</IconButton>
                   <IconButton style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/home/manateghh.png"}/></IconButton>
-
+                          <IconButton onClick={this.salehome} style={{position:"absolute", marginRight:"82%",marginTop:"-2%"}}>فروش خانه</IconButton>
 
 
               </div>

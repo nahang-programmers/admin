@@ -78,6 +78,10 @@ import ButNav from './../containers/ButNav/ButNav.js';
         this.props.history.push('/mynahang')
     }
 
+     salebuyhome = (props) => {
+        this.props.history.push('/sale/buy/home')
+     }
+
 
     render() {
         return (
@@ -97,6 +101,7 @@ import ButNav from './../containers/ButNav/ButNav.js';
                     <IconButton onClick={this.niyazmandi} style={{borderRadius:"3%", margin:"20px 40px"}}> <img src={"./../assets/img/niyazmandi.png"} style={{height:"200px", width:"130px"}} /></IconButton>
                     <IconButton onClick={this.buycar} style={{borderRadius:"3%", margin:"20px 40px"}}><img src={"./../assets/img/kharidoforoshcar.png"} style={{height:"200px", width:"130px"}}/></IconButton>
                     <IconButton onClick={this.mynahang} style={{borderRadius:"3%", margin:"20px 40px"}}><img src={"./../assets/img/mynahang.png"} style={{height:"200px", width:"130px"}}/></IconButton>
+
                     </div>
                 </div>
 

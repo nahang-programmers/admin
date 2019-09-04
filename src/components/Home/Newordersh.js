@@ -33,10 +33,10 @@ class Newordersh extends React.Component {
     componentDidMount() {
         const token = localStorage.getItem('nahang_token');
         // const api = "https://api.nahangapp.ir/V1.0.0";
-        const api = "http://192.168.1.3:4300/V1.0.0";
+        const api = "http://79.175.171.198:9993/V1.0.0";
         axios({
             method: 'get',
-            url: api + "/home/getall",
+            url: api + "/chome/getall",
             headers: {'Authorization': `Bearer ${token}`}
         }).then(response => {
             return response;

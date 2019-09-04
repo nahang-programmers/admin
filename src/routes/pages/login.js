@@ -60,20 +60,6 @@ class LoginLayout extends Component {
 
 
 
-    validateMelicode =() => {
-        console.log('ok');
-        const { melicode } = this.state;
-
-        const pattern = "/[a-zA-Z]/g";
-        if(pattern === true){
-            this.setState({
-                melicodeError:"",
-                melicode:melicode
-            })
-        }else {
-            melicodeError:"کد ملی وارد شده صحیح نمی باشد"
-        }
-    }
 
     validateMobile = () => {
         console.log('mobile');

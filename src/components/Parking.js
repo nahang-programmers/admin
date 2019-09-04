@@ -19,6 +19,9 @@ class Parking extends React.Component {
     newordersp = (props) => {
         this.props.history.push('/Newordersp/parking')
     }
+    rentparking = (props) => {
+        this.props.history.push('/New/rentparking/parking')
+    }
 
 
     render () {
@@ -35,14 +38,8 @@ class Parking extends React.Component {
                     <IconButton onClick={this.transactionsparking} style={{display:"block"}}><img style={{width:"200px"}}  src={"./../assets/img/img-pages/parking/tarakoneshp.png"} /></IconButton>
                         <IconButton style={{position:"absolute", marginRight:"82%",marginTop:"-3%"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/parking/tarakoneshprooz.png"}/></IconButton>
                     <IconButton style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/parking/karbaranp.png"} /></IconButton>
+                        <IconButton onClick={this.rentparking} style={{position:"absolute", marginRight:"82%",marginTop:"-3%"}}> اجاره دهندگان پارکینگ</IconButton>
                     <IconButton style={{display:"block"}}><img style={{width:"200px"}} src={"./../assets/img/img-pages/parking/manateghp.png"} /></IconButton>
-
-
-
-
-
-
-
 
                     </div>
                 </div>

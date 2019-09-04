@@ -14,10 +14,10 @@ export default class Rorders extends React.Component {
 
         handleChange () {
             const token = localStorage.getItem('nahang_token');
-            const url = "http://192.168.1.3:4300/V1.0.0";
+            const url = "http://79.175.171.198:9993/V1.0.0";
             axios ({
                 method: 'PUT',
-                url : url + '/Home/' + "5d656b773af97f117c986279",
+                url : url + '/Home/update' + "5d656b773af97f117c986279",
                 headers: {'Authorization': `Bearer ${token}`},
                 body: {
                     accepted: true,

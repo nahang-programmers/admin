@@ -7,7 +7,7 @@ class Buycar extends React.Component {
         return(
             <React.Fragment>
             <TopNav/>
-            <div>rfrfrf</div>
+
             <ButNav/>
             </React.Fragment>
         );

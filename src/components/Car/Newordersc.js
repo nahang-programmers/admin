@@ -8,6 +8,7 @@ import axios from 'axios';
 import Rcorders from "./madarek/Rcorders";
 import Rorders from "../Car/madarek/Rcorders";
 
+
 class Newordersc extends React.Component {
    constructor(props) {
        super(props)
@@ -29,10 +30,10 @@ class Newordersc extends React.Component {
 
    componentDidMount() {
        const token = localStorage.getItem('nahang_token');
-       const api = "http://192.168.1.3:4300/V1.0.0";
+       const api = "http://79.175.171.198:9993/V1.0.0";
        axios ({
            method:'get',
-           url:api + "/car/getall",
+           url:api + "/ccar/getall",
            headers: {
                'Authorization': `Bearer ${token}`
            }
